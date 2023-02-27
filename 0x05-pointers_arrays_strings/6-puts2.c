@@ -6,19 +6,20 @@
  *
  * @str: This pointer point to a char or string
  *
- *
+ *Return: 0
  */
 
 void puts2(char *str)
 {
-	int a;
+	int i = 0;
 
-	for (a = 0; str[a] != '\0'; a++)
+	while (str[i] != '\0')
 	{
-		if (a % 2 == 0)
+		if (i % 2 == 0)
 		{
-			_putchar(str[a]);
+			_putchar(str[i]);
 		}
+		i++;
 	}
 	_putchar('\n');
 }
