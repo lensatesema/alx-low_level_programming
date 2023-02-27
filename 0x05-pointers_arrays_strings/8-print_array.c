@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -11,15 +12,16 @@
 
 void print_array(int *a, int n)
 {
-	int index;
-	
-	for (index = 0; index < n; index++)
+	int i;
+
+	i = 0;
+	for (n--; n >= 0; n--, i++)
 	{
-		printf("%d", a[index]);
-		if (index != (n - 1))
+		printf("%d", a[i]);
+		if (n > 0)
 		{
 			printf(", ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
